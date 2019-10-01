@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ericraslich.com
+Token: cb5eea20cd385aa13f55a7426a8f7633ad1e6439256ca4f28c9bbfcc2a2579f1
