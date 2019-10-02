@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "npx tailwind build styles.css -o _includes/css/main.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0"
-  },
-  "dependencies": {
-    "tailwind": "^4.0.0"
+    "@11ty/eleventy": "^0.9.0",
+    "tailwindcss": "^1.1.2"
   }
 }

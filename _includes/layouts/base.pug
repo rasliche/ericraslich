@@ -7,13 +7,15 @@ html
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        style
+            include /css/main.css
         title= title
     body
         header
             nav
-                a(href="/") Home
-                a(href="/") Projects
-                a(href="/posts") Blog
+                a(href="/" class={"bg-red-700": page.url === '/'}).mr-4.border.border-b-1 Home
+                a(href="/").mr-4 Projects
+                a(href="/posts" class={"bg-red-700": page.url === '/posts/'}).mr-4 Blog
                 a(href="/") About
 
         main !{content}
