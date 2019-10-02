@@ -1,4 +1,4 @@
 {
-    "layout": "layout.pug",
+    "layout": "layouts/base.pug",
     "tags": ["post"]
 }
