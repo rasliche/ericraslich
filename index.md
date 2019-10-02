@@ -1,5 +1,5 @@
 ---
-layout: layout.pug
+layout: base.pug
 ---
 # Portfolio
 
