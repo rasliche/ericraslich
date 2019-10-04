@@ -1,8 +1,7 @@
 module.exports = function(eleventyConfig) {
-  // Copy `css/fonts/` to `_site/css/fonts`
-  // If you use a subdirectory, it’ll copy using the same directory structure.
-  eleventyConfig.addPassthroughCopy(".well-known/brave-rewards-verification.txt");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("src/.well-known/brave-rewards-verification.txt");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   return {
     dir: {
