@@ -3,4 +3,10 @@ module.exports = function(eleventyConfig) {
   // If you use a subdirectory, it’ll copy using the same directory structure.
   eleventyConfig.addPassthroughCopy(".well-known/brave-rewards-verification.txt");
   eleventyConfig.addPassthroughCopy("css");
-  };
+
+  return {
+    dir: {
+      input: 'src',
+    }
+  }
+};
