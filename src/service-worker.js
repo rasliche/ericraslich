@@ -1,6 +1,6 @@
 // Service Worker for ericraslich.com
 
-const VERSION = 'v3::';
+const VERSION = 'v4::';
 
 self.addEventListener('install', function(event) {
     console.log('WORKER: install event in progress.');
@@ -20,6 +20,7 @@ self.addEventListener('install', function(event) {
                 // after making HTTP requests for each of them.
                 return cache.addAll([
                     '/',
+                    '/offline/',
                     '/hire/',
                     '/css/main.css',
                     '/js/main.js'
