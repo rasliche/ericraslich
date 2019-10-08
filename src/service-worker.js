@@ -97,13 +97,14 @@ self.addEventListener('fetch', function(event) {
                     console.log('WORKER: fetch request failed in both cache and network.')
                     // Create a response programmatically here. First parameter is the response body,
                     // the second is the options definitions.
-                    return new Response('<h1>Service Unavaible. Maybe call instead?</h1>', {
-                        status: 503,
-                        statusText: 'Service Unavailable',
-                        headers: new Headers({
-                            'Content-Type': 'text/html'
-                        })
-                    });
+                    return caches.match('/offline/') 
+                    // new Response('<h1>Service Unavaible. Maybe call instead?</h1>', {
+                    //     status: 503,
+                    //     statusText: 'Service Unavailable',
+                    //     headers: new Headers({
+                    //         'Content-Type': 'text/html'
+                    //     })
+                    // });
                 }
             })
     )
