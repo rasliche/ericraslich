@@ -1,7 +1,16 @@
 ---
+layout: layouts/mainlayout.njk
 title: Projects
 eleventyExcludeFromCollections: true
 tags: project
 ---
 <h1>Some of My Work</h1>
-<p>Not too much here yet. Do you want to have me <a href="/hire" class="border-b-2 border-blue-500">create something</a> for you?</p>
+<ul>
+    {% for project in collections.project %}
+        <li>
+            <a href={{ project.url }}>{{ project.data.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<p>You can have me <a href="/hire" class="border-b-2 border-blue-500">create something</a> for you.</p>
