@@ -1,6 +1,6 @@
 // Service Worker for ericraslich.com
 
-const VERSION = 'v4::';
+const VERSION = 'v1::';
 
 self.addEventListener('install', function(event) {
     console.log('WORKER: install event in progress.');
