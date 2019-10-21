@@ -1,0 +1,29 @@
+---
+title: Pomodoro Timer
+---
+{% raw %}
+<div class="w-5/6 mx-auto bg-gray-200" id="pomodoro-app">
+    <section class="timer-display">
+        {{ minutesRemaining }}:{{ secondsRemaining }}
+    </section>
+    <section class="timer-controls">
+        <button @click="runTimer">Start</button>
+    </section>
+    <section class="time-adjustment-controls">
+        <button class="rounded bg-green-400 p-2 hover:bg-green-500 text-white" @click="timers.sbreak += 60">inc break time</button>
+        <p>{{ timers.sbreak / 60 }}</p>
+        <button class="rounded bg-green-400 p-2 hover:bg-green-500 text-white" @click="timers.sbreak > 0 ? timers.sbreak -= 60 : 0">dec break time</button>
+        <button class="rounded bg-yellow-400 p-2 hover:bg-yellow-500 text-white" @click="timers.work += 60">inc work time</button>
+        <p>{{ timers.work / 60 }}</p>
+        <button class="rounded bg-yellow-400 p-2 hover:bg-yellow-500 text-white" @click="timers.work > 0 ? timers.work -= 60 : 0">dec work time</button>
+        <button class="rounded bg-red-400 p-2 hover:bg-red-500 text-white" @click="timers.lbreak += 60">inc long break time</button>
+        <p>{{ timers.lbreak / 60 }}</p>
+        <button class="rounded bg-red-400 p-2 hover:bg-red-500 text-white" @click="timers.lbreak > 0 ? timers.lbreak -= 60 : 0">dec long break time</button>
+    </section>
+</div>
+{% endraw %}
+
+{% block projectscripts %}
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="/js/pomodoro-timer.js"></script>
+{% endblock %}
