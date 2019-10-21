@@ -1,0 +1,7 @@
+<header>
+  <nav>
+    {% for item in navigation %}
+        <a href="{{ item.url }}" class="mr-4 {% if page.url == item.url %}border-b-2 border-blue-500{% endif %}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>
