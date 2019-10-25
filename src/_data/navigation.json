@@ -12,11 +12,11 @@
         "title": "Blog"
     },
     {
-        "url": "/hire/",
-        "title": "Contact"
-    },
-    {
         "url": "/uses/",
         "title": "Uses"
+    },
+    {
+        "url": "/hire/",
+        "title": "Contact"
     }
 ]
