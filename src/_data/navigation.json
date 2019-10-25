@@ -14,5 +14,9 @@
     {
         "url": "/hire/",
         "title": "Contact"
+    },
+    {
+        "url": "/uses/",
+        "title": "Uses"
     }
 ]
