@@ -1,15 +1,15 @@
 [
     {
         "url": "/",
-        "title": "Home"
+        "title": "Eric"
     },
     {
         "url": "/projects/",
-        "title": "Projects"
+        "title": "Builds"
     },
     {
         "url": "/posts/",
-        "title": "Blog"
+        "title": "Writes"
     },
     {
         "url": "/uses/",
