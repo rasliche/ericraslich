@@ -1,0 +1,14 @@
+{
+    "layout": "layouts/mainlayout.njk",
+    "tags": ["uses"],
+    "oneOffs": [
+        {
+            "name": "KitchenAid Classic Forged Series 8\" Serrated Bread Knife",
+            "referralUrl": "https://amzn.to/37dzCd8"
+        },
+        {
+            "name": "Anker PowerLine 6' USB - Lightning Cable",
+            "referralUrl": "https://amzn.to/2ZoOIK6"
+        }
+    ]
+}
