@@ -2,6 +2,14 @@
 layout: layouts/mainLayout.njk
 ---
 <h1 class="text-xl">{{ title }}</h1>
+<p class="text-sm text-gray-600">
+  {%- if refLink -%}
+    <a href="{{ refLink }}">
+      {{ summary }}
+    </a>
+  {%- endif -%}
+</p>
+
 <article>
   {{ content | safe }}
 </article>
