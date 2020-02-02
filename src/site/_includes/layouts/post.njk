@@ -2,8 +2,11 @@
 layout: layouts/mainLayout.njk
 ---
 
-<h1>{{ title }}</h1>
-<p>Published on {{ page.date }}<p>
+<div>
+    <h1 class="text-lg">{{ title }}</h1>
+    <h2 class="text-sm">({{ subtitle }})</h2>
+    <p class="text-xs">{{ page.date | dateDisplay }}<p>
+</div>
 
 <article>
     {{ content | safe }}
