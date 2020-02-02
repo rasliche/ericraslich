@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/service-worker.js");
 
+  // filters
+  eleventyConfig.addFilter("dateDisplay", require("./src/utils/filters/date.js"));
+
   return {
     dir: {
       input: "src/site",
