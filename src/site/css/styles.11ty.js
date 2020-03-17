@@ -23,8 +23,11 @@ module.exports = class {
     ])
     .process(rawCss, { from: rawFilepath })
     .then(result => {
-      console.log("Processed CSS Successfully")
+      console.log("Processed TailwindCSS Successfully.")
       return result.css
+    })
+    .catch(error => {
+      console.log(`Error processing TailwindCSS: \n ${error}`)
     });
   };
 }
