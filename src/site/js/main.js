@@ -18,15 +18,15 @@
     // }
 
     // Emoji Tooltips
-    const tt = new Tooltip(document.querySelector('#fishing'), {
-        delay: 500,
-        trigger: 'hover focus',
-        title: '🐟'
-    })
-    const tt2 = new Tooltip(document.querySelector('#webdev'), {
-        delay: 500,
-        trigger: 'hover focus',
-        title: '💻'
-    })
+    // const tt = new Tooltip(document.querySelector('#fishing'), {
+    //     delay: 500,
+    //     trigger: 'hover focus',
+    //     title: '🐟'
+    // })
+    // const tt2 = new Tooltip(document.querySelector('#webdev'), {
+    //     delay: 500,
+    //     trigger: 'hover focus',
+    //     title: '💻'
+    // })
 
 })();
