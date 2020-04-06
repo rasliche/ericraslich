@@ -2,7 +2,49 @@
 title: Web AR/VR Experiments
 tag: project
 ---
-<a-scene
+<script>
+  AFRAME.registerComponent('scale-on-mouseenter', {
+    schema: {
+      to: {default: '2.5 2.5 2.5', type: 'vec3'}
+    },
+
+    init: function () {
+      var data = this.data;
+      var el = this.el;
+      this.el.addEventListener('mouseenter', function () {
+        el.object3D.scale.copy(data.to);
+      });
+    }
+  });
+</script>
+
+<a-scene 
+    embedded
+>
+    <a-text
+        value="Hello, World?"
+        position="0 2 -2"
+    ></a-text>
+    <a-box 
+        color="red"
+        rotation="0 45 45"
+        position="0 2 -5"
+        scale="0.5 0.5 0.5"
+        animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+        scale-on-mouseenter
+    ></a-box>
+    {# <a-sky></a-sky> #}
+    <a-plane
+        color="blue"
+        rotation="-90 0 0" 
+        width="30" 
+        height="30"
+    ></a-plane>
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
+</a-scene>
+{# <a-scene
     device-orientation-permission-ui="enabled: true"
     class="h-auto w-screen"
     vr-mode-ui="enabled: false"
@@ -17,4 +59,4 @@ tag: project
         gps-entity-place="latitude: 24.673852; longitude: -81.367879;"
     ></a-text>
     <a-camera gps-camera rotation-reader> </a-camera>
-</a-scene>
+</a-scene> #}
