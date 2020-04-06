@@ -1,6 +1,10 @@
 (function() {
     console.log('Invoke the static site template JavaScript!');
 
+    window.DeviceMotionEvent.requestPermission()
+        .then(response => console.log('Permission Granted.'))
+        .catch(e => console.log(e))
+
     // ServiceWorker is a progressive technology. Ignore unsupported browswers.
     // if ('serviceWorker' in navigator) {
     //     console.log('CLIENT: ServiceWorker registration in progress.');
