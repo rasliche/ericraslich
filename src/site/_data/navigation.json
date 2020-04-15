@@ -1,9 +1,5 @@
 [
     {
-        "url": "/",
-        "title": "Eric"
-    },
-    {
         "url": "/projects/",
         "title": "Builds"
     },

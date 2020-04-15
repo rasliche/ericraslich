@@ -1,12 +1,11 @@
 ---
-layout: layouts/mainLayout.njk
+layout: layouts/base.njk
 title: Blog
 eleventyExcludeFromCollections: true
 tags: post
 ---
 
-<h1>Articles</h1>
-
+<h1 class="text-xl">Posts</h1>
 <ol class="list-inside list-decimal" reversed>
   {% for post in collections.post | reverse %}
     <li>

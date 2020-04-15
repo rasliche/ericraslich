@@ -3,13 +3,13 @@ title: Projects
 eleventyExcludeFromCollections: true
 tags: project
 ---
-<h1>Projects</h1>
+<h1 class="text-xl">Projects</h1>
 <div>
-  <a href="/projects/web-ar-vr">AR/VR Experiments</a>
+  {%- for project in collections.project %}
+    <div>
+      <a href={{ project.url }}>{{ project.data.title }}</a>
+    </div>
+  {% endfor %}
 </div>
-<p>
-  Still working on the resume. I'd love to help you bring an idea to life.
-  Do you want to have me 
-  <a href="/hire" class="border-b-2 border-blue-500">create something</a>
-  for you?
-</p>
+
+<p>Still working on the resume. I'd love to help you bring an idea to life. Do you want to have me <a href="/hire" class="border-b-2 border-blue-500">create something</a> for you?</p>

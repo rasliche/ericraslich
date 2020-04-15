@@ -1,5 +1,4 @@
 ---
-layout: "layouts/gearReviewLayout.njk"
 title: "Aukey Wireless Bluetooth Headphones"
 refLink: "https://amzn.to/2FQ7JMi"
 tags: ['uses', 'tech']

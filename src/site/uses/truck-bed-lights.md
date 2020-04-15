@@ -1,5 +1,4 @@
 ---
-layout: "layouts/gearReviewLayout.njk"
 title: "Truck Bed Lights"
 tags: ['uses', 'auto']
 refLink: "https://amzn.to/3acjOtc"

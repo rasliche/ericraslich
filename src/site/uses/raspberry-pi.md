@@ -1,5 +1,4 @@
 ---
-layout: "layouts/gearReviewLayout.njk"
 title: "Raspberry Pi 3B+"
 tags: ['uses', 'tech']
 summary: "This SBC is a powerhouse. I use it to serve files on my local network, block ads, and run an Ethereum node. It's a great scratchpad for hosting websites locally in a staging configuration."
