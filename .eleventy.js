@@ -1,8 +1,9 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/.well-known/brave-rewards-verification.txt");
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/js");
-  eleventyConfig.addPassthroughCopy("src/service-worker.js");
+  // addPassthroughCopy strips the `dir.input` directory and replaces with `_site`
+  eleventyConfig.addPassthroughCopy("src/site/.well-known/brave-rewards-verification.txt");
+  eleventyConfig.addPassthroughCopy("src/site/css/*.css");
+  eleventyConfig.addPassthroughCopy("src/site/js/*.js");
+  eleventyConfig.addPassthroughCopy("src/site/service-worker.js");
 
   // filters
   eleventyConfig.addFilter("dateDisplay", require("./src/utils/filters/date.js"));
