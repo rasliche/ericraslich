@@ -13,5 +13,4 @@ somewhere.</p>
 
 <p>My favorite tools to work with at the moment are <a href="https://vuejs.org" target="_blank">Vue</a>, <a>Tailwind</a>, <a>Express</a>, and <a>MongoDB</a>.</p>
 
-<p>And the things I'm working on picking up now are some alternative tech stacks and DevOps tools stack <a>Docker</a>, 
-<a>Self-hosting</a>, <a>Linux</a>, <a>Raspberry Pi</a>, and <a>Networking</a>.</p>
+<p>And the things I'm working on picking up now are some alternative tech stacks and DevOps tools like <a>Docker</a>, <a>PostgreSQL</a>, <a>Linux</a>, <a>Raspberry Pi</a>, and general networking and self-hosting skills.</p>
