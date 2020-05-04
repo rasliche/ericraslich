@@ -9,7 +9,7 @@ over time due to fantastic natural processes.
 Big Pine's locally famous Blue Hole is a part of the Florida Keys National Wildlife Refuge system and is a
 old quarry where stone was gathered to raise the grade of the roads on the island.</p>
 
-<div class="w-2/3 mx-auto rounded-lg shadow-xl overflow-hidden">
+<div class="w-2/3 mx-auto my-6 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-100 overflow-hidden">
   <img 
     src="https://res.cloudinary.com/duzmgsio4/image/upload/v1584304410/ericraslich/BlueHoleStud.jpg" 
     alt="A key deer buck"
