@@ -2,6 +2,8 @@ const gitlog = require('gitlog').default
 const { DateTime } = require("luxon")
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.setDataDeepMerge(true);
+  
   // addPassthroughCopy strips the `dir.input` directory and replaces with `_site`
   eleventyConfig.addPassthroughCopy("src/site/.well-known/brave-rewards-verification.txt");
   eleventyConfig.addPassthroughCopy("src/site/css/*.css");
