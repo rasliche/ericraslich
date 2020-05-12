@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon")
+
 module.exports = function(eleventyConfig) {
   // addPassthroughCopy strips the `dir.input` directory and replaces with `_site`
   eleventyConfig.addPassthroughCopy("src/site/.well-known/brave-rewards-verification.txt");
@@ -6,7 +8,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site/service-worker.js");
 
   // filters
-  eleventyConfig.addFilter("dateDisplay", require("./src/utils/filters/date.js"));
+  // Add a friendly date filter to nunjucks.
+  // Defaults to format of LLLL d, y unless an
+  // alternate is passed as a parameter.
+  // {{ date | friendlyDate('OPTIONAL FORMAT STRING') }}
+  // List of supported tokens: https://moment.github.io/luxon/docs/manual/formatting.html#table-of-tokens  
+  eleventyConfig.addFilter("dateDisplay", (dateObj, format = "LLL d, y") => {
+    return DateTime.fromJSDate(dateObj, {
+        zone: "utc"
+      }).toFormat(format)
+  })
+
+  // shortcodes
 
   return {
     dir: {
