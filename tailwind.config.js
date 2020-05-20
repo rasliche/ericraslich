@@ -1,6 +1,11 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        // simple-price-grid-component
+        'bright-yellow': 'hsl(71, 73%, 54%)'
+      }
+    }
   },
   variants: {},
   plugins: [
