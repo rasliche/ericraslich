@@ -4,3 +4,22 @@ title: Four Card Feature Section
 <div class="mt-8 p-3 bg-gray-100">
 </div>
 
+<div class="flex flex-wrap mt-4 leading-loose">
+    <h2 class="text-lg w-full">Thoughts and Notes</h2>
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Points of Interest</p>
+        <ul class="space-y-2">
+            <li></li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Where I Deviated</p>
+        <ul class="space-y-2">
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
