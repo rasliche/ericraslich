@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site/.well-known/brave-rewards-verification.txt");
   eleventyConfig.addPassthroughCopy("src/site/css/*.css");
   eleventyConfig.addPassthroughCopy("src/site/js/*.js");
+  eleventyConfig.addPassthroughCopy("src/site/assets/*");
   eleventyConfig.addPassthroughCopy("src/site/service-worker.js");
 
   // filters
