@@ -2,13 +2,13 @@
 layout: layouts/base.njk
 ---
 
-<div>
-    <h1 class="text-lg">{{ title }}</h1>
-    <h2 class="text-sm">({{ subtitle }})</h2>
-    <p class="text-xs">{{ page.date | dateDisplay }}<p>
-</div>
+<article class="flex flex-wrap max-w-2xl">
+    <div>
+        <h1 class="text-lg">{{ title }}</h1>
+        <h2 class="text-sm">({{ subtitle }})</h2>
+        <p class="text-xs">{{ page.date | dateDisplay }}<p>
+    </div>
 
-<article class="flex flex-wrap">
     {{ content | safe }}
 </article>
 

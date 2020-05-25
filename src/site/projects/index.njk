@@ -1,10 +1,11 @@
 ---
+layout: layouts/base.njk
 title: Projects
 eleventyExcludeFromCollections: true
 tags: project
 ---
-<h1 class="text-xl">Projects</h1>
-<div>
+<div class="max-w-2xl">
+  <h1 class="text-xl">{{ title }}</h1>
   {%- for project in collections.project %}
     <div>
       <a href={{ project.url }}>{{ project.data.title }}</a>
