@@ -1,0 +1,35 @@
+---
+title: KeyWestGroundParrot.com
+---
+<div class="max-w-2xl mt-4 leading-loose">
+    <h1 class="text-xl">{{ title }}</h1>
+    <p class="mt-2">
+        Key West Ground Parrot is a brand for stickers I create and sell online.
+    </p>
+
+    <p class="mt-2">
+        Check it out online at <a class="border-blue-300 border-b" href="https://keywestgroundparrot.com" >KeyWestGroundParrot.com</a>
+    </p>
+</div>
+
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose">
+    <h2 class="text-lg w-full">Thoughts and Notes</h2>
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Points of Interest</p>
+        <ul class="space-y-2">
+            <li>Built with Tailwind standard colors, except the yellow. You can check out the source code to see my tailwind config theme extensions.</li>
+            <li>Copying a design is easier and more fun than creating from scratch.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Where I Deviated</p>
+        <ul class="space-y-2">
+            <li>I didn't bother to include the suggested font (Karla). I wasn't sure how to do it the most efficient way for just this page. WIP</li>
+            <li>Accessibility: Not sure this design was super accessible to begin with. Maybe I could have made it more accessible by tinkering with the built in colors. Not going to jump through those hoops for this example project.</li>
+        </ul>
+    </div>
+
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
