@@ -22,7 +22,7 @@ self.addEventListener('install', function(event) {
                     '/',
                     '/offline/',
                     '/hire/',
-                    '/css/main.css',
+                    '/css/styles.css',
                     '/js/main.js'
                 ]);
             })
