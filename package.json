@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "npx tailwind build src/styles.css -o src/_includes/css/main.css"
+    "style": "npx tailwind build src/styles.css -o src/_includes/css/main.css",
+    "start": "npx eleventy --serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
     "tailwindcss": "^1.4.6"
   },
   "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "gitlog": "^4.0.0"
   }
 }

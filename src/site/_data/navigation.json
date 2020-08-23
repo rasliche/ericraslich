@@ -1,22 +1,24 @@
-[
-    {
-        "url": "/projects/",
-        "title": "Builds"
-    },
-    {
-        "url": "/posts/",
-        "title": "Writes"
-    },
-    {
-        "url": "/uses/",
-        "title": "Uses"
-    },
-    {
-        "url": "/garden/",
-        "title": "Garden"
-    },
-    {
-        "url": "/hire/",
-        "title": "Contact"
-    }
-]
+{
+    "items": [
+        {
+            "url": "/projects/",
+            "text": "Builds"
+        },
+        {
+            "url": "/blog/",
+            "text": "Writes"
+        },
+        {
+            "url": "/uses/",
+            "text": "Uses"
+        },
+        {
+            "url": "/garden/",
+            "text": "Garden"
+        },
+        {
+            "url": "/hire/",
+            "text": "Contact"
+        }
+    ]
+}

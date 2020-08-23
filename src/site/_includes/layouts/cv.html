@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="space-y-12">
+    <div>
+        <img />
+        <h1 class="text-4xl">
+            {{ bio.name }}
+            <span class="text-sm italic text-gray-500">
+                ({{ bio.pronouns }})
+            </span>
+        </h1>
+        {% for method in contact %}
+            {{ method }}
+        {% endfor %}
+    </div>
+    <div>
+        <h2 class="text-2xl pb-3 mb-6 border-b border-gray-700">Professional Experience</h2>
+        {% for job in work %}
+        <div class="mb-4">
+            <span class="italic text-gray-500 text-sm">{{ job.dates.from }} - {{ job.dates.to if job.dates.to else "Present" }}</span>
+            <h3 class="text-xl">{{ job.title }}</h3>
+            <p><a href="{{ job.website }}">{{ job.employer }}</a></p>
+            <p>{{ job.location }}</p>
+            <p>{{ job.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div>
+        <h2 class="text-2xl pb-3 mb-6 border-b border-gray-700">Education</h2>
+        {% for course in education %}
+        <div class="mb-4">
+            <span class="italic text-gray-500 text-sm">{{ course.dates.from }} - {{ course.dates.to if course.dates.to else "Present" }}</span>
+            <h3 class="text-xl">{{ course.level }}, {{ course.major }}</h3>
+            <p><a href="{{ course.website }}">{{ course.school }}</a> - {{ course.location }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div>
+        <h2 class="text-2xl pb-3 mb-6 border-b border-gray-700">About Me</h2>
+        {{ content | safe }}
+    </div>
+</div>
+{% endblock %}

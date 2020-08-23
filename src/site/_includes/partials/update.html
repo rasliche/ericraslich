@@ -1,0 +1,11 @@
+{% if update %}
+<article class="max-w-sm mx-auto text-sm rounded bg-green-100 p-2">
+  <h2 class="">Hey! - {{ update.title }}</h2>
+  <p class="">{{ update.summary }}</p>
+  {% if update.learnMore %}
+  <div class="text-sm">
+    <a href="{{ update.learnMore.link }}">{{ update.learnMore.text }}</a>
+  </div>
+  {% endif %}
+</article>
+{% endif %}

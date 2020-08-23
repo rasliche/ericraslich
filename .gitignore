@@ -5,6 +5,7 @@ npm-debug.*
 .DS_store
 .env
 .cache
+.netlify
 
 # Node modules and output
 node_modules

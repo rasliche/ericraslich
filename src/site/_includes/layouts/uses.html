@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+<article>
+{% include 'partials/page-header.html' %}
+
+{% set usesListItems = collections.uses %}
+{% include 'partials/uses-list.html' %}
+
+<h3 class="mt-48">Just Trust Me</h3>
+<ol class="mt-2 text-sm list-inside list-none">
+    {%- for item in oneOffs -%}
+        <li class="text-gray-700">
+            <a href={{ item.referralUrl }}>{{ item.name }}</a>
+        </li>
+    {%- endfor -%}
+</ol>
+</article>
+{% endblock %}

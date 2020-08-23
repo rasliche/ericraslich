@@ -1,5 +1,5 @@
 {
-    "layout": "layouts/gearReviewLayout.njk",
+    "layout": "layouts/gearReviewLayout.html",
     "tags": ["uses"],
     "oneOffs": [
         {

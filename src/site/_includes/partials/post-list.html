@@ -1,0 +1,13 @@
+<div id="post-list">
+    {% if postListHeadline %}
+        <h2 class="text-xl">{{ postListHeadline }}</h2>
+    {% endif %}
+
+    <ol class="list-inside" reversed>
+    {% for post in postListItems %}
+        <li>
+            <span><a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date | dateDisplay }}</span>
+        </li>
+    {% endfor %}
+    </ol>
+</div>

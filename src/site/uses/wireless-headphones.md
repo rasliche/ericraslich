@@ -1,7 +1,7 @@
 ---
 title: "Aukey Wireless Bluetooth Headphones"
 refLink: "https://amzn.to/2FQ7JMi"
-tags: ['uses', 'tech']
+tags: ['Tech']
 summary: "These are such a great bang-for-your-buck pair of wireless headphones. They're basically disposable but definitely don't sound like it."
 ---
 I use these headphones almost daily and they've become an indispensible part of what goes into my bag when I leave the house.

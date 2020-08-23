@@ -1,0 +1,18 @@
+{% if usesSectionHeader %}
+<h3 class="mt-4 text-lg">{{ usesSectionHeader }}</h3>
+{% endif %}
+
+{% if usesListItems %}
+<ol class="mt-2 list-inside list-disc">
+    {%- for item in usesListItems -%}
+        <li>
+            <a href={{ item.url }}>
+                {{ item.data.title }}
+            </a>
+            <span class="text-sm text-gray-700">
+                {{ item.data.summary }}
+            </span>
+        </li>
+    {%- endfor -%}
+</ol>
+{% endif %}

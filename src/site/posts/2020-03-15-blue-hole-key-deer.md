@@ -1,6 +1,7 @@
 ---
 title: Blue Hole Key Deer
 subtitle: Those who wander are probably begging for snacks.
+tags: ["Nature", "Florida Keys"]
 ---
 <p class="w-full">The significant other's family is in town and so we took them to the literal local watering hole.
 The Blue Hole is not like many of the famous blue holes in Mexico or the Bahamas, formed naturally
