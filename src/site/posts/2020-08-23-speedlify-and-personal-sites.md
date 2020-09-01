@@ -3,6 +3,8 @@ title: Speedlify and Personal Sites
 subtitle: How to measure your site performance over time
 tags: ["Web Development", "Tech", "Self-hosted"]
 ---
+## THIS POST IS A WORK IN PROGRESS
+
 ## a little background
 
 If you weren't aware (and you shouldn't be!), this site was built with [Eleventy](11ty.dev). It is an incredibly awesome static site generator built by [Zach Leatherman](zachleat.com).
@@ -15,7 +17,7 @@ Zach released this awesome tool called [Speedlify](zachleat.com/web/speedlify), 
 
 Here are the general steps I took
 
-<!-- Markdown lists don't need actual ordered numbers -->
+<!-- Markdown lists don't need actual ordered numbers. This makes them easy to re-order. -->
 1. Clone and configure the speedlify repo
 1. Host on Netlify
 1. Webhook it all together
