@@ -28,8 +28,8 @@ Here are the general steps I took
 
 ## host on netlify
 
-
+I set Speedlify up as a Netlify site, so it deploys when I commit to the master branch of my fork of Speedlify. Because I'm not often working on Speedlify, I let this do what it's gonna do, and don't plan to mess with it often at this point. But as we configured above, you can choose how often to run the speed tests against your sites/pages. I own a domain (you're here now), and was able to put Speedlify on it's own subdomain. I think it's cool. Why not? It feels a little more professional than a randomly generated URL.
 
 ## webhook it all together
 
-Netlify gives you access to a several options for sending a webhook
+Netlify gives you a few ways to send or listen for webhooks.
