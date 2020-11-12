@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "npx tailwind build src/site/styles.css -o src/site/_includes/css/main.css",
     "start": "npx eleventy --serve"
   },
   "keywords": [],
