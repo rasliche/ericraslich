@@ -9,7 +9,7 @@
     
     <title>{{ title }}</title>
   </head>
-  <body class="m-4 text-gray-700 ">
+  <body class="m-4 text-gray-700 max-w-lg mx-auto">
     
     {% include 'partials/site-head.html' %}
     
@@ -17,7 +17,7 @@
       {% block content %}{% endblock %}
     </main>
     
-    {% include 'partials/_footer.njk' %}
+    {% include 'partials/_footer.html' %}
     
     <script src="/js/main.js" type="text/javascript"></script>
   </body>
