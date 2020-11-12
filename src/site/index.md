@@ -8,8 +8,9 @@ update:
         link: 'https://keywestgroundparrot.com'
         text: 'KeyWestGroundParrot.com'
 ---
-# Just Eric
 
-I like to live simply and experiment wrecklessly with web technologies, and fishing.
+Wannabe web developer, charter fishing guide, and professional government drone trying to
+help the public be more aware of marine ecosystem topics, issues, and solutions.
+
 
 I write about fishing, learning web development, and other things probably.
