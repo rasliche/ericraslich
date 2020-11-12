@@ -3,7 +3,7 @@ title: 'Eric Raslich'
 layout: 'layouts/home.html'
 update:
     title: 'I made some stickers'
-    summary: "As a way of experimenting, learning, getting rid of the stickers I already made... I made a website! Check it out and if you fancy the design, I'd love to see what you do with it!"
+    summary: "As a way of experimenting, learning, getting rid of the stickers I already made... I made a website! Check it out and if you dig the design, I'd love to see what you do with it!"
     learnMore:
         link: 'https://keywestgroundparrot.com'
         text: 'KeyWestGroundParrot.com'
