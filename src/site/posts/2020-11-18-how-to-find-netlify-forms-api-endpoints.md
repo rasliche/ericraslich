@@ -10,6 +10,6 @@ Netlify is an incredible platform, but I do think certain parts of their documen
 
 ## Anyway, here we go
 
-If you google this problem enough, you'll basically end up at the Netlify community forums where an old answer, apparently from a Netlify employee, tells you to "do what we do! Check the network tab!"
+If you google this problem enough, you'll eventually end up at the Netlify community forums where an old answer, apparently from a Netlify employee, tells you to "do what we do! Check the network tab!"
 
-So unless you want to console.log a bunch of responses to endpoints and work your way through accessing the parameters you need, just check the Network tab of the devtools for your browser.
+So unless you want to `console.log` a bunch of responses to endpoints and work your way through accessing the parameters you need, just check the Network tab of the devtools for your browser.
