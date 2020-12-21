@@ -5,7 +5,7 @@ layout: 'layouts/garden.html'
 
 ## A Discord Experiment
 
-I started a <a class="border-blue-300 border-b" href="https://discord.gg/8XTrpTF">Discord server</a> to for pair programming for web developers.
+I started a <a class="border-blue-300 border-b" href="https://discord.gg/8XTrpTF">Discord server</a> for pair programming for web developers.
     
 I mostly use a MEVN stack, so feel free to hop on there if you want to pair program for a bit.
 
