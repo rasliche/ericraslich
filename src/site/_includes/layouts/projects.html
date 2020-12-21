@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="max-w-2xl">
+  <h1 class="text-xl">{{ title }}</h1>
+  {%- for project in collections.project %}
+    <div>
+      <a href={{ project.url }}>{{ project.data.title }}</a>
+    </div>
+  {% endfor %}
+</div>
+
+  {{ content | safe }}
+{% endblock %}
