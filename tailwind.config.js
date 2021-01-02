@@ -1,4 +1,11 @@
 module.exports = {
+  purge: {
+    enabled: true,
+    content: [
+      './src/**/*.html',
+      './src/**/*.md',
+    ]
+},
   theme: {
     extend: {
       colors: {
