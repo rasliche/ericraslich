@@ -1,5 +1,6 @@
 ---
-layout: 'layouts/base.html'
+layout: 'layouts/404.html'
+title: Offline
 ---
 # Well, heck.
 

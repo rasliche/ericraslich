@@ -8,7 +8,3 @@ a work project. The provisioning of a server was incredibly simple
 (relative to how complicated it is to install and run a raspberry pi
 at home, I guess) and the tutorials on the Digital Ocean site were
 super helpful.
-
-
-
-It is what it is.
