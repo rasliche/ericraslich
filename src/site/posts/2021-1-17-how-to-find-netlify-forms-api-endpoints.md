@@ -91,7 +91,7 @@ Here is an example you could use in a nunjucks template with the results we got 
 
 ```html
 <div>
-  {% raw %}
+  {%- raw -%}
   {%- for racer in results -%}
     <div>
       <p>{{ racer.name }}<span>{{ racer.location }}</span></p>
@@ -99,7 +99,7 @@ Here is an example you could use in a nunjucks template with the results we got 
       <p>"All thanks to {{ racer.fuel }}"</p>
     </div>
   {%- endfor -%}
-  {% endraw %}
+  {%- endraw -%}
   </div>
   ```
 
