@@ -14,6 +14,7 @@ I wanted to use Netlify Form responses as data in an 11ty site instead of using 
 ## not so quick and dirty
 
 1. Install Netlify's API package if available. Here it is for JavaScript: `npm i netlify`. You'll need this to hit the API.
+1. Create a Personal Access Token in your Netlify User Settings.
 1. Create a Netlify form on your site and have Netlify build it.
 1. Visit the forms tab, open your dev tools, and hit refresh to see what the id is for the form you need.
 1. Use that form ID to make a request in an eleventy `_data/*.js` file.
@@ -23,11 +24,23 @@ I wanted to use Netlify Form responses as data in an 11ty site instead of using 
 
 If you google how to find your form ID enough, you'll eventually end up at the Netlify community forums where an old answer, apparently from a Netlify employee, tells you to "do what we do! Check the network tab!"
 
-So unless you want to `console.log` a bunch of responses to endpoints and work your way through accessing the parameters you need, just check the Network tab of the devtools for your browser. Save your time!
+So unless you want to `console.log` a bunch of responses to endpoints and work your way through accessing the parameters you need, just check the Network tab of the devtools for your browser. Save your time! Start by going to the Forms section of one of your Netlify sites. Open the dev toops, and hit refresh on your browser.
+
+First, look at the `forms` network request to find your site ID in the request URL, or you can find it in the Netlify Dashboard under Settings > General > Site Details > API ID:
+
+![Network tab in chrome dev tools showing the headers tab](https://res.cloudinary.com/duzmgsio4/image/upload/v1610936994/ericraslich/network_tab.png)
+
+Next, check out the Preview tab. This is where you can find the ID for each form, along with some meta-info about the form. You'll use the ID in a later request using the netlify npm package to get the responses to each form.
+
+![Network tab in chrome dev tools showing the preview tab](https://res.cloudinary.com/duzmgsio4/image/upload/v1610936994/ericraslich/preview_tab.png)
+
+
 
 ## environment.js
 
-The first thing I did was create an `environment.js` file in my `_data/` directory. This file looks like this, at a minimum:
+The first thing I did in my project was create an `environment.js` file in my `_data/` directory. 11ty makes these available on a project-wide level. This also contains the final piece of the request puzzle, your personal access token. While logged into Netlify, click your user icon in the top right corner and navigate to the Personal Access section of the Applications tab. Name it whatever you want, make sure to copy it down into your Netlify Environment Variables area.
+
+The file looks like this in your project, not including any other environment variables you need:
 
 ``` js
 // _data/environment.js
@@ -52,7 +65,7 @@ This is my go-to way of getting environmental variables from Netlify. These are 
 
 ## _data/results.js
 
-And this is how you use that form ID and site ID to make a request to the Netlify API.
+And this is how you use that form ID and site ID we found earlier to make a request to the Netlify API.
 
 ``` js
 // results.js
@@ -63,12 +76,29 @@ const NetlifyAPI = require('netlify')
 const client = new NetlifyAPI(netlifyPersonalAccessToken())
 
 module.exports = async function() {
-    const resultsFormResponse = await client.listFormSubmissions({
+    const formResponses = await client.listFormSubmissions({
         form_id: formId(),
         site_id: siteId(),
     })
 
-    return resultsFormResponse
+    return formResponses
 }
 ```
 
+## how to use the results in an eleventy nunjucks template
+
+Here is an example you could use in a nunjucks template with the results we got above from Netlify's API:
+
+```html
+<div>
+  {%- for racer in results -%}
+    <div>
+      <p>{{ racer.name }}<span>{{ racer.location }}</span></p>
+      <p>{{ racer.time }} <span>{{ racer.distance }}</span></p>
+      <p>"All thanks to {{ racer.fuel }}"</p>
+    </div>
+  {%- endfor -%}
+  </div>
+  ```
+
+Hope this was a little helpful. Happy to assist with your projects specific if you need a pair of second eyes. Constructive criticism welcome, on this first of hopefully many posts.
