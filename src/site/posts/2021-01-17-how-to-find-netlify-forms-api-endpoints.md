@@ -36,14 +36,14 @@ Next, check out the Preview tab. This is where you can find the ID for each form
 
 
 
-## environment.js
+## src/site/_data/environment.js
 
 The first thing I did in my project was create an `environment.js` file in my `_data/` directory. 11ty makes these available on a project-wide level. This also contains the final piece of the request puzzle, your personal access token. While logged into Netlify, click your user icon in the top right corner and navigate to the Personal Access section of the Applications tab. Name it whatever you want, make sure to copy it down into your Netlify Environment Variables area.
 
 The file looks like this in your project, not including any other environment variables you need:
 
 ``` js
-// _data/environment.js
+// src/site/_data/environment.js
 
 module.exports = {
     netlifyPersonalAccessToken: () => {
@@ -63,12 +63,12 @@ module.exports = {
 
 This is my go-to way of getting environmental variables from Netlify. These are available when 11ty builds, with some caveats. It works great for other data stuff, and in templates of course.
 
-## _data/results.js
+## src/site/_data/results.js
 
 And this is how you use that form ID and site ID we found earlier to make a request to the Netlify API.
 
 ``` js
-// results.js
+// src/site/_data/results.js
 
 const { netlifyPersonalAccessToken, siteId, formId } = require('./environment')
 
@@ -89,9 +89,11 @@ module.exports = async function() {
 
 Here is an example you could use in a nunjucks template with the results we got above from Netlify's API:
 
-```html
-<div>
-  {%- raw %}
+```njk
+// src/site/results.html
+// results from results.js
+{%- raw %}
+  <div>
     {%- for racer in results -%}
       <div>
         <p>{{ racer.name }}<span>{{ racer.location }}</span></p>
@@ -99,8 +101,8 @@ Here is an example you could use in a nunjucks template with the results we got 
         <p>"All thanks to {{ racer.fuel }}"</p>
       </div>
     {%- endfor -%}
-  {% endraw -%}
   </div>
-  ```
+{% endraw %}
+```
 
 Hope this was a little helpful. Happy to assist with your projects specific if you need a pair of second eyes. Constructive criticism welcome, on this first of hopefully many posts.
