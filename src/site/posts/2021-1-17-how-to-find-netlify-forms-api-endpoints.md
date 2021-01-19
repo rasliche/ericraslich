@@ -91,15 +91,15 @@ Here is an example you could use in a nunjucks template with the results we got 
 
 ```html
 <div>
-  {%- raw -%}
-  {%- for racer in results -%}
-    <div>
-      <p>{{ racer.name }}<span>{{ racer.location }}</span></p>
-      <p>{{ racer.time }} <span>{{ racer.distance }}</span></p>
-      <p>"All thanks to {{ racer.fuel }}"</p>
-    </div>
-  {%- endfor -%}
-  {%- endraw -%}
+  {%- raw %}
+    {%- for racer in results -%}
+      <div>
+        <p>{{ racer.name }}<span>{{ racer.location }}</span></p>
+        <p>{{ racer.time }} <span>{{ racer.distance }}</span></p>
+        <p>"All thanks to {{ racer.fuel }}"</p>
+      </div>
+    {%- endfor -%}
+  {% endraw -%}
   </div>
   ```
 
