@@ -12,7 +12,9 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.4.11",
     "gitlog": "^4.0.3",
+    "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
 }

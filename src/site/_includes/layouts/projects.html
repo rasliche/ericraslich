@@ -10,5 +10,14 @@
   {% endfor %}
 </div>
 
+<div class="max-w-2xl">
+  <h1 class="text-xl">Experiments</h1>
+  {%- for exp in collections.experiment %}
+    <div>
+      <a href={{ exp.url }}>{{ exp.data.title }}</a>
+    </div>
+  {% endfor %}
+</div>
+
   {{ content | safe }}
 {% endblock %}

@@ -1,0 +1,60 @@
+---
+title: Drag and Drop
+---
+
+<div class="max-w-2xl mt-4 leading-loose mx-auto">
+    <h1 class="text-xl">{{ title }}</h1>
+    <p class="mt-2">
+        Playing around with the HTML Drag and Drop API.
+    </p>
+</div>
+
+<div class="grid grid-cols-3 grid-rows-4">
+    <div id="ball" draggable="true" class="bg-blue-700 w-1/4 col-span-1 row-start-4 row-end-4">
+        <p>ball</p>
+    </div>
+    <div id="basket" class="bg-blue-700 col-start-3 col-end-3 row-start-1 row-end-1">
+        <p>basket</p>
+    </div>
+    <div>
+        <p id="score">0</p>
+</div>
+
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
+    <h2 class="text-lg w-full">Thoughts and Notes</h2>
+    <p class="mt-2">
+        lorem ipsum dolor
+    </p>
+
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Points of Interest</p>
+        <ul class="space-y-2">
+            <li>tbd</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Where I Deviated</p>
+        <ul class="space-y-2">
+            <li>tbd</li>
+        </ul>
+    </div>
+
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
+
+<script>
+    (function() {
+        console.log('hello world')
+        function dragstart_handler(ev) {
+        // Add the target element's id to the data transfer object
+        ev.dataTransfer.setData("text/plain", ev.target.id);
+        }
+
+        // Get the element by id
+        const element = document.getElementById("ball");
+        // Add the ondragstart event listener
+        element.addEventListener("dragstart", dragstart_handler);
+    })()
+</script>

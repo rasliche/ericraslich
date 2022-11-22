@@ -1,0 +1,38 @@
+---
+title: qr code
+---
+
+<div class="max-w-2xl mt-4 leading-loose mx-auto">
+    <h1 class="text-xl">{{ title }}</h1>
+    <p class="mt-2">
+        Literally ripping off Wes Bos' QR code reader.
+    </p>
+</div>
+
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
+    <h2 class="text-lg w-full">Thoughts and Notes</h2>
+    <p class="mt-2">
+        lorem ipsum dolor
+    </p>
+
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Points of Interest</p>
+        <ul class="space-y-2">
+            <li>tbd</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 p-2">
+        <p class="mt-2 font-semibold">Where I Deviated</p>
+        <ul class="space-y-2">
+            <li>tbd</li>
+        </ul>
+    </div>
+
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
+
+<script>
+    (console.log('hello'))()
+</script>
