@@ -1,0 +1,46 @@
+---
+title: Test Page
+---
+
+<div class="max-w-2xl mt-4 leading-loose mx-auto">
+    <h1 class="text-xl">{{ title }}</h1>
+    <p class="mt-2">
+        Testing different Web APIs.
+    </p>
+    <p id="battery-level">Loading battery level...</p>
+</div>
+
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
+
+<script>
+    (function() {
+        console.log('hello world')
+        const level = document.querySelector("#battery-level")
+        navigator.getBattery().then((battery) => {
+            console.log("Got Battery")
+            // Initial State
+            updateChargeInfo()
+
+            // Event Listeners
+            battery.addEventListener("chargingchange", () => {
+                console.log("updated the charging status")
+                console.log(battery.charging)
+                updateChargeInfo()
+            })
+
+            battery.addEventListener("levelchange", () => {
+                console.log("updated the battery level status")
+                updateChargeInfo()
+            });
+
+            function updateChargeInfo() {
+                level.innerHTML = `${battery.level * 100}%`
+                console.log(`Battery charging? ${battery.charging ? "Yes" : "No"}`)
+            }
+        })
+    })()
+</script>
