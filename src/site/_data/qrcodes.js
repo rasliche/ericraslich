@@ -1,39 +1,54 @@
 const QRCode = require('qrcode')
 
-// QR Code Generation
-options = {
-    errorCorrectionLevel: 'H',
-    color: {
-        light: '#000000ff',
-        dark: '#ffffffff'
+// QR Code Options
+const good = {
+    urlString: '/api/good-feedback',
+    options: {
+        errorCorrectionLevel: 'H',
+        margin: 2,
+        color: {
+            light: '#000000ff',
+            dark: '#33dd50ff'
+        }
+    }
+}
+const okay = {
+    urlString: '/api/okay-feedback',
+    options: {
+        errorCorrectionLevel: 'H',
+        margin: 2,
+        color: {
+            light: '#000000ff',
+            dark: '#f3f711ff'
+        }
     }
 }
 
-const goodUrl = QRCode.toDataURL('/api/feedback-good', options, (error, url) => {
-    if (error) {
-        console.log(error)
+const poor = {
+    urlString: '/api/poor-feedback',
+    options: {
+        errorCorrectionLevel: 'H',
+        margin: 2,
+        color: {
+            light: '#000000ff',
+            dark: '#ff0000ff'
+        }
     }
-    console.log(url)
-    return url
-})
+}
 
-// const okayUrl = QRCode.toDataURL('/api/feedback-okay', options, (error, url) => {
-//     if (error) {
-//         console.log(error)
-//     }
-//     return url
-// })
+async function buildQRCodeDataURL({urlString, options}) {
+    return QRCode.toDataURL(urlString, options)
+}
 
-// const poorUrl = QRCode.toDataURL('/api/feedback-poor', options, (error, url) => {
-//     if (error) {
-//         console.log(error)
-//     }
-//     return url
-// })
+module.exports = async function() {
+    const goodUrl = await buildQRCodeDataURL(good)
+    const okayUrl = await buildQRCodeDataURL(okay)
+    const poorUrl = await buildQRCodeDataURL(poor)
 
-module.exports = {
-    test: 'test',
-    goodUrl: goodUrl || 'shouldBeTheGoodUrl',
-    // okayUrl,
-    // poorUrl
+    return {
+        test: 'test',
+        goodUrl,
+        okayUrl,
+        poorUrl,
+    }
 }
