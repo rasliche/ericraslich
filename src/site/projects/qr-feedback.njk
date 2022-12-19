@@ -3,16 +3,14 @@ title: Feedback Form
 ---
 
 <div class="w-full flex justify-evenly">
-    {{ qrcodes.test }}
     <div class="flex-1 text-center">
-        <p>{{ qrcodes.goodUrl }}</p>
-        <a href="/api/feedback-good"><img src="{{ qrcodes.goodUrl }}" />Good</a>
+        <a href="/api/feedback-good"><img src="{{ qrcodes.goodUrl }}" /></a>
     </div>
     <div class="flex-1 text-center">
-        <a href="/api/feedback-okay">Okay</a>
+        <a href="/api/feedback-okay"><img src="{{ qrcodes.okayUrl }}" /></a>
     </div>
     <div class="flex-1 text-center">
-        <a href="/api/feedback-poor">Poor</a>
+        <a href="/api/feedback-poor"><img src="{{ qrcodes.poorUrl }}" /></a>
     </div>
 </div>
 
