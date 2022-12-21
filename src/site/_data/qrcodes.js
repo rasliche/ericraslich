@@ -2,7 +2,7 @@ const QRCode = require('qrcode')
 
 // QR Code Options
 const good = {
-    urlString: '/api/good-feedback',
+    urlString: '/api/feedback-positive',
     options: {
         errorCorrectionLevel: 'H',
         margin: 2,
@@ -13,7 +13,7 @@ const good = {
     }
 }
 const okay = {
-    urlString: '/api/okay-feedback',
+    urlString: '/api/feedback-neutral',
     options: {
         errorCorrectionLevel: 'H',
         margin: 2,
@@ -25,7 +25,7 @@ const okay = {
 }
 
 const poor = {
-    urlString: '/api/poor-feedback',
+    urlString: '/api/feedback-poor',
     options: {
         errorCorrectionLevel: 'H',
         margin: 2,
@@ -41,14 +41,14 @@ async function buildQRCodeDataURL({urlString, options}) {
 }
 
 module.exports = async function() {
-    const goodUrl = await buildQRCodeDataURL(good)
-    const okayUrl = await buildQRCodeDataURL(okay)
-    const poorUrl = await buildQRCodeDataURL(poor)
+    const positiveUrl = await buildQRCodeDataURL(good)
+    const neutralUrl = await buildQRCodeDataURL(okay)
+    const negativeUrl = await buildQRCodeDataURL(poor)
 
     return {
         test: 'test',
-        goodUrl,
-        okayUrl,
-        poorUrl,
+        positiveUrl,
+        neutralUrl,
+        negativeUrl,
     }
 }
