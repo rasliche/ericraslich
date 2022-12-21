@@ -1,0 +1,74 @@
+---
+title: Feedback Form Results
+eleventyExcludeFromCollections: true
+---
+
+
+<div class="w-full flex justify-evenly">
+    <div class="flex-1">
+        <img src="{{ qrcodes.positiveUrl }}" />
+        <p id="positive-feedback-total">Loading...</p>
+    </div>
+    <div class="flex-1">
+        <img src="{{ qrcodes.neutralUrl }}" />
+        <p id="neutral-feedback-total">Loading...</p>
+    </div>
+    <div class="flex-1">
+        <img src="{{ qrcodes.negativeUrl }}" />
+        <p id="negative-feedback-total">Loading...</p>
+    </div>
+</div>
+
+<div>
+    <h2 class="text-lg font-semibold">Feedback Form Results</h2>
+    <ol class="list-decimal list-inside">
+        <li>Display three QR codes</li>
+        <li>encode serverless function URL in each QR code</li>
+        <li>serverless function hits a database endpoint to increment correct count</li>
+        <li>serverless function redirects to the feedback results page with confirmation message and updated totals</li>
+    </ol>
+</div>
+
+<script>
+    const positiveElement = document.querySelector('#positive-feedback-total')
+    fetch('/api/feedback-positive-total')
+        .then(response => {
+            // console.log(response)
+            return response.json()
+        })
+        .then(json => {
+            // console.log(json)
+            positiveElement.innerHTML = json.allTime
+        })
+        .catch(error => {
+            positiveElement.innerHTML = 'Error fetching total.'
+        })
+    
+    const neutralElement = document.querySelector('#neutral-feedback-total')
+    fetch('/api/feedback-neutral-total')
+        .then(response => {
+            // console.log(response)
+            return response.json()
+        })
+        .then(json => {
+            // console.log(json)
+            neutralElement.innerHTML = json.allTime
+        })
+        .catch(error => {
+            neutralElement.innerHTML = 'Error fetching total.'
+        })
+    
+    const negativeElement = document.querySelector('#negative-feedback-total')
+    fetch('/api/feedback-negative-total')
+        .then(response => {
+            // console.log(response)
+            return response.json()
+        })
+        .then(json => {
+            // console.log(json)
+            negativeElement.innerHTML = json.allTime
+        })
+        .catch(error => {
+            negativeElement.innerHTML = 'Error fetching total.'
+        })
+</script>

@@ -3,20 +3,21 @@ title: Feedback Form
 ---
 
 <div class="w-full flex justify-evenly">
-    <div class="flex-1 text-center">
-        <a href="/api/feedback-good"><img src="{{ qrcodes.goodUrl }}" /></a>
+    <div class="flex-1">
+        <a href="/api/feedback-positive"><img src="{{ qrcodes.positiveUrl }}" /></a>
     </div>
-    <div class="flex-1 text-center">
-        <a href="/api/feedback-okay"><img src="{{ qrcodes.okayUrl }}" /></a>
+    <div class="flex-1">
+        <a href="/api/feedback-neutral"><img src="{{ qrcodes.neutralUrl }}" /></a>
     </div>
-    <div class="flex-1 text-center">
-        <a href="/api/feedback-poor"><img src="{{ qrcodes.poorUrl }}" /></a>
+    <div class="flex-1">
+        <a href="/api/feedback-negative"><img src="{{ qrcodes.negativeUrl }}" /></a>
     </div>
 </div>
 
 <div>
+    <h2 class="text-lg font-semibold">Feedback Form</h2>
     <ol class="list-decimal list-inside">
-        <li class="text-lg font-semibold">Display three QR codes</li>
+        <li>Display three QR codes</li>
         <li>encode serverless function URL in each QR code</li>
         <li>serverless function hits a database endpoint to increment correct count</li>
         <li>serverless function redirects to the feedback results page with confirmation message and updated totals</li>

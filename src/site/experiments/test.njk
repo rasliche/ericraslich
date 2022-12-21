@@ -7,7 +7,10 @@ title: Test Page
     <p class="mt-2">
         Testing different Web APIs.
     </p>
-    <p id="battery-level">Loading battery level...</p>
+    <video id="video-preview" class="border border-blue-700" autoplay></video>
+    <select id="camera-select">
+        <option>-- No Camera Selected --</option>
+    </select>
 </div>
 
 <div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
@@ -19,28 +22,18 @@ title: Test Page
 <script>
     (function() {
         console.log('hello world')
-        const level = document.querySelector("#battery-level")
-        navigator.getBattery().then((battery) => {
-            console.log("Got Battery")
-            // Initial State
-            updateChargeInfo()
+        const video = document.querySelector('#video-preview')
+        const constraints = {
+            audio: false,
+            video: true
+        }
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then(stream => {
+                video.srcObject = stream
 
-            // Event Listeners
-            battery.addEventListener("chargingchange", () => {
-                console.log("updated the charging status")
-                console.log(battery.charging)
-                updateChargeInfo()
             })
-
-            battery.addEventListener("levelchange", () => {
-                console.log("updated the battery level status")
-                updateChargeInfo()
-            });
-
-            function updateChargeInfo() {
-                level.innerHTML = `${battery.level * 100}%`
-                console.log(`Battery charging? ${battery.charging ? "Yes" : "No"}`)
-            }
-        })
+            .catch(error => {
+                console.error(error)
+            })
     })()
 </script>
