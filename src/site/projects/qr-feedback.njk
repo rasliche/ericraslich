@@ -4,13 +4,13 @@ title: Feedback Form
 
 <div class="w-full flex justify-evenly">
     <div class="flex-1">
-        <a href="/api/feedback-positive"><img src="{{ qrcodes.positiveUrl }}" /></a>
+        <a id="feedback-positive" href="/api/feedback-positive"><img src="{{ qrcodes.positiveUrl }}" /></a>
     </div>
     <div class="flex-1">
-        <a href="/api/feedback-neutral"><img src="{{ qrcodes.neutralUrl }}" /></a>
+        <a id="feedback-neutral" href="/api/feedback-neutral"><img src="{{ qrcodes.neutralUrl }}" /></a>
     </div>
     <div class="flex-1">
-        <a href="/api/feedback-negative"><img src="{{ qrcodes.negativeUrl }}" /></a>
+        <a id="feedback-negative" href="/api/feedback-negative"><img src="{{ qrcodes.negativeUrl }}" /></a>
     </div>
 </div>
 
@@ -23,3 +23,5 @@ title: Feedback Form
         <li>serverless function redirects to the feedback results page with confirmation message and updated totals</li>
     </ol>
 </div>
+
+<script src="/js/qr-feedback.js"></script>
