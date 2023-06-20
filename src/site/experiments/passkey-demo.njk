@@ -1,0 +1,42 @@
+---
+title: Passkey Demo
+---
+
+<div class="max-w-2xl mt-4 leading-loose mx-auto">
+    <h1 class="text-xl">{{ title }}</h1>
+    <p class="mt-2">
+        Testing the usage of Passage by 1Password.
+    </p>
+    <passage-profile app-id="ZpH0bHxjHmf8O3mbq3qPcrwm"></passage-profile>
+
+    <passage-auth app-id="ZpH0bHxjHmf8O3mbq3qPcrwm"></passage-auth>
+    {# <video id="video-preview" class="border border-blue-700" autoplay></video>
+    <select id="camera-select">
+        <option>-- No Camera Selected --</option>
+    </select> #}
+</div>
+
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
+<script src="https://psg.so/web.js" defer></script>
+<script>
+    {# (function() {
+        console.log('hello world')
+        const video = document.querySelector('#video-preview')
+        const constraints = {
+            audio: false,
+            video: true
+        }
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then(stream => {
+                video.srcObject = stream
+
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    })() #}
+</script>
