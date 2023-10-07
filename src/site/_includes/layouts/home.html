@@ -1,8 +1,23 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
+<h1>{{ title }}</h1>
 <article>
-    <h1>{{ title }}</h1>
+    <p class="sm:hidden">
+        {{ tiny }}
+    </p>
+    <p class="hidden sm:max-md:block">
+        {{ short }}
+    </p>
+    <p class="hidden md:max-lg:block">
+        {{ medium }}
+    </p>
+    <p class="hidden lg:max-xl:block">
+        {{ long }}
+    </p>
+    <p class="hidden xl:block">
+        {{ huge }}
+    </p>
     {{ content | safe }}
 </article>
 
