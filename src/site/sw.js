@@ -1,6 +1,6 @@
 // Service Worker for ericraslich.com
 
-const VERSION = 'v1::';
+const VERSION = 'v2::';
 
 self.addEventListener('install', function(event) {
     console.log('WORKER: install event in progress.');
@@ -20,8 +20,8 @@ self.addEventListener('install', function(event) {
                 // after making HTTP requests for each of them.
                 return cache.addAll([
                     '/',
-                    '/offline',
-                    '/hire',
+                    '/offline/',
+                    '/hire/',
                     '/css/styles.css',
                     '/js/main.js'
                 ]);
@@ -40,6 +40,13 @@ self.addEventListener('fetch', function(event) {
         console.log('WORKER: fetch event ignored.', event.request.method, event.request.url);
         return;
     }
+
+    // TODO: RegEx to ignore eleventy development requests
+    // if (event.request.url !== 'GET') {
+    //     console.log('WORKER: dev fetch event ignored.', event.request.method, event.request.url);
+    //     return;
+    // }
+    
     // Similar to waitUntil, respondsWith blocks the fetch event waiting for a Promise.
     // Fulfillment result will be used as the response,
     // and rejection results in an HTTP response indicating failure.
