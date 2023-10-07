@@ -1,7 +1,7 @@
 {
   "name": "ericraslich",
   "version": "0.0.1",
-  "description": "Personal and portfolio website of a mediocre wannabe developer.",
+  "description": "Personal and portfolio website of a decent boat captain and a mediocre wannabe developer.",
   "main": "index.js",
   "scripts": {
     "start": "npx eleventy --serve"
