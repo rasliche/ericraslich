@@ -11,6 +11,6 @@ tiny: ☕️ 💻 💼 ⛴️ 🐟 🍍 🐕
 short: I build software and drive boats good.
 medium: Wannabe web developer, charter fishing guide, and professional government drone trying to help the public be more aware of marine ecosystem topics, issues, and solutions.
 long: 
-huge: Solving problems in ways that maximize value for everyone involved is what I love to do. I have a Master of Science degree in Information Systems - Cybersecurity from Florida International University and a Bachelor of Science degree in Zoology - Marine Biology from Michigan State University.
+huge: Solving problems in ways that maximize value for everyone involved is what I love to do. I have a Master of Science degree in Information Systems - Cybersecurity from Florida International University and a Bachelor of Science degree in Zoology - Marine Biology from Michigan State University. Promoting synergy.
 
 ---
