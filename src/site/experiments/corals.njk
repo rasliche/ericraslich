@@ -1,0 +1,59 @@
+---
+title: Corals
+---
+
+<div class="max-w-2xl mt-4 leading-loose mx-auto">
+    <h1 class="text-xl">{{ title }}</h1>
+    <svg class="border-dashed border-black border-2" viewBox="0 0 200 200">
+    </svg>
+
+    {# <p class="mt-2">
+        Testing different Web APIs.
+    </p>
+    <video id="video-preview" class="border border-blue-700" autoplay></video>
+    <select id="camera-select">
+        <option>-- No Camera Selected --</option>
+    </select> #}
+</div>
+
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
+    <div class="w-full p-2">
+        {% changelog filePath=page.inputPath %}
+    </div>
+</div>
+
+<script>
+    function getRandomInteger(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    function getRandomfromArray(array) {
+        return array[getRandomInteger(array.length)]
+    }
+
+    (function() {
+        console.log('hello world')
+        const colors = ['red', 'blue', 'green', 'yellow']
+        const canvasElement = document.querySelector('svg')
+        const points = [...Array(100)].map(() => {
+            return {
+                x: getRandomInteger(190)+5,
+                y: getRandomInteger(190)+5
+            }
+        })
+
+        points.forEach(coordinatePair => {
+            const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle")
+            circle.setAttribute("cx", coordinatePair.x) //.cx = coordinatePair.x
+            circle.setAttribute("cy", coordinatePair.y) //.cx = coordinatePair.x
+            circle.setAttribute("r", 5) //.cx = coordinatePair.x
+            circle.setAttribute("stroke", getRandomfromArray(colors)) //.cx = coordinatePair.x
+            circle.setAttribute("fill", getRandomfromArray(colors)) //.cx = coordinatePair.x
+            console.log(circle)
+            // <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+            canvasElement.appendChild(circle)
+        })
+
+        console.log(points)
+    })()
+</script>
