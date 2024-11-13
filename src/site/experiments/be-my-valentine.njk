@@ -1,12 +1,13 @@
 ---
-title: Corals
+title: Valentine?
 references:
     - https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/
+    - https://twitter.com/trunarla/status/1753544163189227650
 githubLink: 
 ---
 
 <div class="max-w-2xl mt-4 leading-loose mx-auto">
-    <h1 class="text-xl">{{ title }}</h1>
+    <h1 class="text-xl text-center">{{ title }}</h1>
     <svg class="border-dashed border-black border-2" viewBox="0 0 200 200">
     </svg>
 
@@ -25,6 +26,12 @@ githubLink:
     </div>
 </div>
 
+<div class="flex flex-wrap max-w-2xl mt-4 leading-loose mx-auto">
+    <div class="w-full p-2">
+        {% include 'partials/references.html' %}
+    </div>
+</div>
+
 {# <script src="https://unpkg.com/delaunator@5.0.0/delaunator.min.js"></script> #}
 
 <script>
@@ -38,7 +45,7 @@ githubLink:
 
     (function() {
         console.log('hello world')
-        const colors = ['red', 'blue', 'green', 'yellow']
+        const colors = ['red', 'pink', 'lavender']
         const canvasElement = document.querySelector('svg')
         const points = [...Array(100)].map(() => {
             return [randomInteger(190)+5, randomInteger(190)+5]
