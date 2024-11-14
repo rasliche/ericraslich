@@ -4,13 +4,13 @@
   "description": "Personal and portfolio website of a decent boat captain and a mediocre wannabe developer.",
   "main": "index.js",
   "scripts": {
-    "start": "npx eleventy --serve"
+    "start": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.11",
     "faunadb": "^4.7.1",
