@@ -38,7 +38,9 @@
     </div>
     <div>
         <h2 class="text-2xl pb-3 mb-6 border-b border-gray-700">About Me</h2>
-        {{ content | safe }}
+        <article class="prose space-y-4">
+            {{ content | safe }}
+        </article>
     </div>
 </div>
 {% endblock %}

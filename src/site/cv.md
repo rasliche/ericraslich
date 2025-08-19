@@ -3,8 +3,8 @@ layout: 'layouts/cv.html'
 bio:
     name: 'Eric Raslich'
     pronouns: 'he/him'
-    role: 'Education and Outreach Specialist'
-    location: 'Big Pine Key, FL'
+    role: 'Seeking opportunities'
+    location: 'Fenton, MI'
 contact:
     twitter:
     github:
@@ -14,13 +14,13 @@ contact:
     phone:
 work:
     - title: Education and Outreach Specialist
-      description: 'Lorem ipsum dolor set'
-      employer: Florida International University
+      description: 'Provide meaningful ocean education that inspires conservation and stewardship.'
+      employer: NOAA - Florida Keys National Marine Sanctuary
       location: Key West, FL
       website: 'https://fiu.edu'
       dates:
-        from: 09/2020
-        to: Present
+        from: 09/2015
+        to: 08/2025
     - title: Captain
       description: 'Drove boats and took care of stuff.'
       employer: Florida Sea Base - Boy Scouts of America
@@ -28,8 +28,16 @@ work:
       website: 'https://bsaseabase.org'
       dates:
         from: 05/2010
-        to: 09/2015
+        to: 08/2025
 education:
+    - school: Florida International University - Chapman School of Business
+      website: https://fiu.edu
+      location: Miami, FL
+      dates:
+        from: 08/2022
+        to: 10/2023
+      level: Masters
+      major: Information Systems - Business Cybersecurity
     - school: Michigan State University
       website: https://msu.edu
       location: East Lansing, MI
@@ -42,7 +50,7 @@ skills: [HTML, CSS, JavaScript, Vue, Git, MongoDB, TailwindCSS]
 languages:
 interests:
 ---
-I love to learn, and I hope that some of the projects found on the <a class="border-b-2 border-blue-500 font-medium" href="/projects/">Builds</a> page of this site are good examples of what I've made throughout that process. The page you're currently reading is more of a long form resume if you need some more of the details.
+I love to learn, and I hope that some of the projects found on the <a class="border-b-2 border-blue-500 hover:pb-0.5 font-medium" href="/projects/">Builds</a> page of this site are good examples of what I've made throughout that process. The page you're currently reading is more of a long form resume if you need some more of the details.
 
 Back in 2007 I completed the requirements to become an Eagle Scout. I'm still proud of it today, and have enjoyed a lifetime of enjoying the use of skills I learned and friends I made and continue to make through Scouting.
 
