@@ -15,12 +15,13 @@
     
     <title>{{ title }}</title>
   </head>
-  <body class="m-4 text-gray-700 dark:text-gray-400 dark:bg-gray-900 max-w-lg mx-auto">
+  <body class="m-4 text-gray-700 dark:text-gray-400 dark:bg-gray-900 max-w-2xl mx-auto">
     
     {% include 'partials/site-head.html' %}
     
     <main tabindex="-1" id="main-content">
-      {% block content %}{% endblock %}
+      {% block content %}
+      {% endblock %}
     </main>
     
     {% include 'partials/_footer.html' %}

@@ -8,9 +8,9 @@ layout: 'layouts/home.html'
 #         link: 'https://keywestgroundparrot.com'
 #         text: 'KeyWestGroundParrot.com'
 tiny: ☕️ 💻 💼 ⛴️ 🐟 🍍 🐕
-short: I build software and drive boats good.
-medium: Wannabe web developer, charter fishing guide, and professional government drone trying to help the public be more aware of marine ecosystem topics, issues, and solutions.
-long: 
-huge: Solving problems in ways that maximize value for everyone involved is what I love to do. I have a Master of Science degree in Information Systems - Cybersecurity from Florida International University and a Bachelor of Science degree in Zoology - Marine Biology from Michigan State University. Promoting synergy.
+short: I build websites and drive boats good.
+medium: Web developer, former charter fishing guide, and looking for the next great opportunity.
+long: I'm looking for the next great opportunity to help businesses (or governments or non-profits!) solve technological problems in ways that maximize value for everyone involved. Whether that means increasing profit and customer satisfaction, more efficiently reaching the audience you want to, or decreasing your costs to provide services to the public.
+huge: I'm looking for the next great opportunity to help businesses (or governments or non-profits!) solve technological problems in ways that maximize value for everyone involved. Whether that means increasing profit and customer satisfaction, more efficiently reaching the audience you want to, or decreasing your costs to provide services to the public. I can work within your constraints and help you manage large or small projects, or just act as an individual contributor or subject matter expert. I have a Master of Science degree in Information Systems - Business Cybersecurity from Florida International University and a Bachelor of Science degree in Zoology - Marine Biology from Michigan State University.
 
 ---

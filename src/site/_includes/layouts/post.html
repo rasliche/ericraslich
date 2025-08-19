@@ -2,12 +2,12 @@
 
 {% block content %}
 <article class="flex flex-wrap max-w-2xl">
-    <div>
+    <div class="mb-4">
         <h1 class="text-lg">{{ title }}</h1>
         <h2 class="text-sm">({{ subtitle }})</h2>
         <p class="text-xs">{{ page.date | dateDisplay }}<p>
     </div>
-    <div class="prose">
+    <div class="prose space-y-4">
         {{ content | safe }}
     </div>
 </article>
