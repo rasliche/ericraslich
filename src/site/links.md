@@ -11,7 +11,7 @@ links:
       level: Bachelor
       major: Zoology
     - title: "@rasliche.com"
-      url: https://bsky.app/profile/rasliche.bsky.social
+      url: https://bsky.app/profile/ericraslich.com
     - title: next thing
       url: "#"
 ---

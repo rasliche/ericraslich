@@ -1,16 +1,8 @@
 {
     "items": [
         {
-            "url": "/projects/",
-            "text": "Builds"
-        },
-        {
             "url": "/blog/",
             "text": "Writes"
-        },
-        {
-            "url": "/uses/",
-            "text": "Uses"
         },
         {
             "url": "/hire/",
