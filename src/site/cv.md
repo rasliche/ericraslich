@@ -46,7 +46,7 @@ education:
         to: 12/2012
       level: Bachelor
       major: Zoology
-skills: [HTML, CSS, JavaScript, Vue, Git, MongoDB, TailwindCSS]
+skills: [HTML, CSS, JavaScript, Nuxt, Vue, Git, PostgreSQL, MongoDB, Daisy UI TailwindCSS]
 languages:
 interests:
 ---
