@@ -7,6 +7,12 @@ layout: 'layouts/home.html'
 #     learnMore:
 #         link: 'https://keywestgroundparrot.com'
 #         text: 'KeyWestGroundParrot.com'
+update:
+    title: 'I have a CV'
+    # summary: "As a way of experimenting, learning, getting rid of the stickers I already made... I made a website! Check it out and if you dig the design, I'd love to see what you do with it!"
+    learnMore:
+        link: 'https://ericraslich.com/cv'
+        text: 'CV'
 tiny: ☕️ 💻 💼 ⛴️ 🐟 🍍 🐕
 short: I build websites and drive boats good.
 medium: Web developer, former charter fishing guide, and looking for the next great opportunity.
