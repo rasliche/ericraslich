@@ -55,7 +55,7 @@ certifications:
     dates:
       issued: January 18, 2026
       expires: January 19, 2029
-    description:
+    description: Demonstrate expertise in cybersecurity and threat modeling and prevention.
     validationLink:
     validationCode:
     
