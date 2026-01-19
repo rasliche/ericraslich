@@ -7,6 +7,10 @@
         {
             "url": "/hire/",
             "text": "Contact"
+        },
+        {
+            "url": "/cv/",
+            "text": "CV"
         }
     ]
 }
