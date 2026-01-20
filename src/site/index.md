@@ -1,5 +1,5 @@
 ---
-title: 'Eric Raslich'
+title: 'Home'
 layout: 'layouts/home.html'
 # update:
 #     title: 'I made some stickers'

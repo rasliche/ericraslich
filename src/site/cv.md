@@ -1,4 +1,5 @@
 ---
+title: 'CV'
 layout: 'layouts/cv.html'
 bio:
     name: 'Eric Raslich'
