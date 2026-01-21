@@ -11,12 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.11",
-    "faunadb": "^4.7.1",
     "gitlog": "^4.0.3",
     "postcss": "^8.4.16",
     "qrcode": "^1.5.1",
     "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19"
   }
 }
