@@ -12,6 +12,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "autoprefixer": "^10.4.11",
+    "faunadb": "^4.7.1",
     "gitlog": "^4.0.3",
     "postcss": "^8.4.16",
     "qrcode": "^1.5.1",
