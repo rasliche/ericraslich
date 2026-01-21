@@ -4,10 +4,12 @@
 <article class="flex flex-wrap max-w-2xl">
     <div class="mb-4">
         <h1 class="text-lg">{{ title }}</h1>
+        {% if subtitle %}
         <h2 class="text-sm">({{ subtitle }})</h2>
+        {% endif %}
         <p class="text-xs">{{ page.date | dateDisplay }}<p>
     </div>
-    <div class="prose space-y-4">
+    <div class="prose prose-h2:text-lg prose-h2:ml-4 prose-ol:list-decimal prose-ul:list-disc prose-li:ml-4 space-y-4">
         {{ content | safe }}
     </div>
 </article>
