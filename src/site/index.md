@@ -9,10 +9,16 @@ layout: 'layouts/home.html'
 #         text: 'KeyWestGroundParrot.com'
 # update:
 #     title: 'I have a CV'
-#     # summary: "As a way of experimenting, learning, getting rid of the stickers I already made... I made a website! Check it out and if you dig the design, I'd love to see what you do with it!"
+#     summary: "As a way of experimenting, learning, getting rid of the stickers I already made... I made a website! Check it out and if you dig the design, I'd love to see what you do with it!"
 #     learnMore:
 #         link: 'https://ericraslich.com/cv'
 #         text: 'CV'
+update:
+    title: 'Hey Genesee 9-1-1!'
+    summary: "It was great speaking with you! Let's keep the conversation going!"
+    learnMore:
+        link: 'https://github.com/rasliche/ericraslich'
+        text: "this site's source code"
 tiny: ☕️ 💻 💼 ⛴️ 🐟 🍍 🐕
 short: I build websites and drive boats good.
 medium: Web developer, former charter fishing guide, and looking for the next great opportunity.
