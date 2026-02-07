@@ -15,10 +15,10 @@ layout: 'layouts/home.html'
 #         text: 'CV'
 update:
     title: 'Hey Genesee 9-1-1!'
-    summary: "It was great speaking with you! Let's keep the conversation going!"
+    summary: "It was great speaking with you! Let's keep the conversation going! This is one of my favorite projects, a fundraiser 5k that my wife and I organized. I wrote the code for the site, she made the graphic."
     learnMore:
-        link: 'https://github.com/rasliche/ericraslich'
-        text: "this site's source code"
+        link: 'https://5k.keywestgroundparrot.com'
+        text: "Key West Ground Parrot 5k"
 tiny: ☕️ 💻 💼 ⛴️ 🐟 🍍 🐕
 short: I build websites and drive boats good.
 medium: Web developer, former charter fishing guide, and looking for the next great opportunity.
