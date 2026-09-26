@@ -59,7 +59,10 @@ certifications:
     description: Demonstrate expertise in cybersecurity and threat modeling and prevention.
     validationLink:
     validationCode:
-    
+  - title: A+  
+    issuer: CompTIA
+  - title: Microsoft Certified Hybrid System Administrator Associate
+    issuer: Microsoft
 ---
 I love to learn, and I hope that some of the projects found on the <a class="border-b-2 border-blue-500 hover:pb-0.5 font-medium" href="/projects/">Builds</a> page of this site are good examples of what I've made throughout that process. The page you're currently reading is more of a long form resume if you need some more of the details.
 
